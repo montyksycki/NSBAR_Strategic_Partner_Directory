@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      /* body,
+      html {
+        font-size: 16px;
+        margin: 0;
+        padding: 1rem;
+      } */
+
+      .profile_page_container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem;
+      }
+
+      .grid_page_container {
+        display: grid;
+        grid-template-columns: 25rem 25rem 25rem;
+        grid-template-rows: 5rem 25rem auto;
+        gap: 0.5rem;
+        grid-template-areas:
+          "header header header"
+          "photo logo contact"
+          "content content content";
+      }
+
+      .grid_page_header {
+        grid-area: header;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .grid_page_photo {
+        box-sizing: border-box;
+        grid-area: photo;
+      }
+      
+      .grid_page_photo img {
+        border: solid 2px black;
+        border-radius: 30px;
+        height: 100%;
+        aspect-ratio: 1/1;
+      }
+
+      .grid_page_logo {
+        grid-area: logo;
+      }
+
+      .grid_page_logo img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+      }
+
+      .grid_page_contact {
+        grid-area: contact;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: none;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .contact_container {
+      }
+
+      
+      .contact_email {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: black;
+      }
+      
+      .grid_page_content {
+        grid-area: content;
+        padding: 1rem 1rem 27rem 1rem;
+      }
+      
+      .grid_page_content p {
+        font-size: 1.25rem;
+        line-height: 1.85rem;
+      }
+      
+      .content_container {
+      }
+      
+      .font {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .header_title {
+        text-align: center;
+        margin: .2rem 0;
+        font-size: 4rem;
+      }
+
+      .contact_name {
+        font-size: 1.75rem;
+        margin: .2rem 0;
+      }
+
+      .contact_title {
+        margin: 0.3rem 0;
+        font-size: 1.5rem;
+      }
+
+      .contact_title {
+        font-style: italic;
+      }
+
+      .contact_address {
+        font-size: 1.5rem;
+        font-style: normal;
+        line-height: 2rem;
+        font-weight: ;
+      }
+      
+      .contact_address a {
+        text-decoration: none;
+        color: #000;
+      }
+
+    </style>
+
+    <div class="profile_page_container">
+      <div class="grid_page_container">
+        <div class="grid_page_header">
+          <h2 class="font header_title">Platinum Strategic Partner</h2>
+        </div>
+        <div class="grid_page_photo">
+          <img
+            src="https://www.nsbar.org/sites/default/files/Kristin_Marsden.jpg"
+            alt=""
+          />
+        </div>
+        <div class="grid_page_logo">
+          <img
+            src="https://www.nsbar.org/sites/default/files/Dunsing.png"
+            alt=""
+          />
+        </div>
+        <div class="font grid_page_contact">
+          <div class="contact_container">
+            <h2 class="contact_name">Kristin Marsden</h2>
+            <h3 class="contact_title">Director of Communications</h3>
+            <address class="contact_address">
+              To Schedule: <a href="tel:+18473670782">847.367.0782</a><br />
+              Direct: <a href="tel:+18472326995">847.232.6995</a><br />
+              Mobile: <a href="tel:+18473434901 ">847.343.4901</a><br />
+              <a href="mailto:kristin@dunsing.com">kristin@dunsing.com</a><br />
+              <a href="https://www.dunsing.com/">www.dunsing.com</a><br />
+            </address>
+          </div>
+        </div>
+
+        <div class="font grid_page_content">
+          <!-- <div class="content_container"></div> -->
+          <p>Dunsing Inspections has been a family-owned business since 1980.  We have a team of licensed inspectors who perform commercial & residential inspections all over Chicago and the suburbs.</p>
+          <p>We pride ourselves on bringing calm to the real estate transaction by being professional, ethical, educators.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

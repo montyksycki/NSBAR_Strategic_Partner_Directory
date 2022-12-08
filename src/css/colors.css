@@ -1,0 +1,82 @@
+:root {
+  --color_teal_dark: #04736b;
+  --color_teal_medium: #23bab1;
+  --color_teal_light: #2ed9c3;
+  --color_gray_dark: #263238;
+  --color_blue_dark: #005d8a;
+  --color_blue_light: #187dab;
+  --color_purple: #403759;
+
+  --color_platinum: hsl(269, 47%, 41%);
+  --color_diamond: hsl(5, 76%, 39%);
+  --color_gold: hsl(43, 62%, 30%);
+  --color_silver: hsl(0, 2%, 45%);
+  --color_bronze: hsl(23, 65%, 29%);
+  --color_teal: hsl(176, 40%, 53%);
+
+}
+
+.background_color_platinum {
+  /* background-color: hsl(269, 47%, 41%); */
+  background-color: var(--color_platinum);
+  color: #fff;
+}
+
+.background_color_diamond {
+  background-color: var(--color_diamond);
+  color: #fff;
+}
+
+.background_color_gold {
+  background-color: var(--color_gold);
+  color: #fff;
+}
+
+.background_color_silver {
+  background-color: var(--color_silver);
+  color: #fff;
+}
+
+.background_color_bronze {
+  background-color: var(--color_bronze);
+  color: #fff;
+}
+
+.background_color_teal {
+  background-color: var(--color_teal);
+  color: #fff;
+}
+
+.background_color_affiliate {
+  background-color: #000;
+  color: #fff;
+}
+
+.color_affiliate {
+  color: #000;
+}
+
+.color_platinum {
+  /* background-color: hsl(269, 47%, 41%); */
+  color: var(--color_platinum);
+}
+
+.color_diamond {
+  color: var(--color_diamond);
+}
+
+.color_gold {
+  color: var(--color_gold);
+}
+
+.color_silver {
+  color: var(--color_silver);
+}
+
+.color_bronze {
+  color: var(--color_bronze);
+}
+
+.color_teal {
+  color: var(--color_teal);
+}
